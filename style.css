@@ -1,0 +1,422 @@
+/* Reset */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 85%;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Reset End */
+
+nav ul {
+    display: flex;
+    gap: 190px;
+    justify-content: center;
+}
+
+#nav li a:hover {
+    color: rgb(17, 250, 17);
+    text-shadow: 0px 0px 8px rgb(238, 238, 238);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 85px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#home p {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#home img {
+    height: 650px;
+    width: auto;
+    border: 3px double rgb(17, 250, 17);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#home img:hover {
+    box-shadow: 0px 0px 12px 0px rgb(17, 250, 17);
+    border: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#About {
+    margin-top: 90px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px 0PX;
+}
+
+hr {
+    width: 200px;
+    border: 1px solid rgb(238, 238, 238);
+    margin: 20px 0px;
+}
+
+#About #me {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h3 {
+    margin: 16px 0px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#About ul {
+    display: flex;
+    gap: 105px;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(17, 250, 17);
+    margin: 30px 0px;
+}
+
+#About button {
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 200px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.reviewpic {
+    width: 70px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.review-row {
+    display: flex;
+    gap: 50px;
+}
+
+.review {
+    max-width: 85%;
+}
+
+#Projects {
+    margin-top: 90px;
+}
+
+.pro-img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.pro-img:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 8px 0px rgb(134, 255, 134);
+}
+
+.project-row {
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+#Contact {
+    margin-top: 50px;
+}
+
+input {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+textarea {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    height: 170px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+form button {
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 190px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    box-shadow: 0px 1px 5px 0px rgb(17, 250, 17);
+}
+
+footer {
+    margin: 90px 0px 30px 0px;
+}
+
+.icon {
+    width: 35px;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    gap: 210px;
+    justify-content: center;
+}
+
+/* Animation Styling */
+.titan-background {
+    position: absolute;
+    width: 90%;
+    overflow: hidden;
+    z-index: -1;
+    top: -17%;
+    height: 120%;
+    min-height: 120vh;
+    margin-bottom: -20%;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    width: 300vw;
+    height: 100vh;
+    transform: translate(0%, 0%);
+    background-size: contain;
+    background-repeat: repeat;
+    transform-origin: top left;
+}
+
+.stars-L {
+    background-image: url("assets/stars-L.svg");
+    background-size: 890px;
+    height: 750px;
+    animation: panning-stars 200s linear infinite alternate;
+}
+
+.stars-M {
+    background-image: url("assets/stars-M.svg");
+    height: 530px;
+    animation: panning-stars 300s linear infinite alternate;
+}
+
+.stars-S {
+    background-image: url("assets/stars-S.svg");
+    height: 370px;
+    animation: panning-stars 400s linear infinite alternate;
+}
+
+@keyframes panning-stars {
+    from {
+        transform: translate(-20%, 0%);
+    }
+
+    to {
+        transform: translate(-80%, -40%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    nav ul {
+        gap: 120px;
+    }
+
+    #home img {
+        height: 500px;
+    }
+
+    #About ul {
+        gap: 60px;
+    }
+
+    .project-row {
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .pro-img {
+        width: 100%;
+    }
+
+    footer ul {
+        gap: 120px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    nav ul {
+        gap: 60px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #home img {
+        height: 400px;
+    }
+
+    #About ul {
+        gap: 30px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    footer ul {
+        gap: 80px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .review-row {
+        flex-direction: column;
+    }
+
+    #context {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    nav ul {
+        gap: 20px;
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    #desc {
+        font-size: 14px;
+    }
+
+    #home img {
+        height: 300px;
+    }
+
+    #About {
+        margin-top: 50px;
+    }
+
+    #About #me {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    hr {
+        width: 180px;
+    }
+
+    h3 {
+        margin: 30px 0px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #About ul {
+        gap: 15px;
+        font-size: 11px;
+        font-weight: 400;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .reviewpic {
+        width: auto;
+        height: 60px;
+    }
+
+    .review {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .mobile {
+        display: flex;
+        gap: 15px;
+    }
+
+    .review-row {
+        margin-top: 30px;
+    }
+
+    .project-row {
+        gap: 15px;
+        margin-top: auto;
+    }
+
+    #Projects {
+        margin-top: 30px;
+    }
+
+    #context {
+        font-size: 13px;
+    }
+
+    footer ul {
+        gap: 40px;
+        justify-content: flex-start;
+    }
+
+    .icon {
+        width: 28px;
+    }
+}
