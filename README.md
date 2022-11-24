@@ -8,6 +8,6 @@ The overall structure is done, it only currently needs content updates like;
 3. Project images and functional links.
 4. Connecting form to a database.
 
-> This portfolio repo is still work-in-progress.
->
-> And regular updates will keep pouring til it is a finished product.
+*This portfolio repo is still work-in-progress.*
+
+*Regular updates will keep pouring in until it is a finished product.*
